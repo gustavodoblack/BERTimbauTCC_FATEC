@@ -1,0 +1,109 @@
+# 📂 Datasets
+
+Esta pasta contém os conjuntos de dados utilizados no projeto  
+**Análise de Sentimentos nas Avaliações da Saúde Pública**.
+
+Os dados foram utilizados para:
+
+- Treinamento dos modelos de PLN
+- Teste dos modelos
+- Análise das avaliações públicas
+- Comparação entre BERTimbau e LSTM
+
+---
+
+## 📌 Estrutura da Pasta
+
+```
+datasets/
+│
+├── goemotions/
+├── avaliacoes_saude/
+├── treino/
+├── teste/
+└── README.md
+```
+
+---
+
+## 🧠 Dataset de Treinamento — GoEmotions
+
+Dataset original desenvolvido pelo Google.
+
+- Total de frases: 211.226
+- Emoções: 27 categorias
+- Baseado na Roda das Emoções de Plutchik
+
+### Ajustes realizados
+
+- Tradução para português
+- Remoção de stopwords
+- Correção ortográfica
+- Balanceamento de classes
+- Limpeza de texto
+- Agrupamento em 8 emoções principais
+
+Emoções utilizadas no projeto:
+
+- Alegria
+- Antecipação
+- Raiva
+- Tristeza
+- Surpresa
+- Nojo
+- Medo
+- Confiança
+
+---
+
+## 🏥 Dataset das Avaliações de Saúde Pública
+
+Coletado via Web Scraping no Google Avaliações.
+
+Cidades analisadas:
+
+- Cotia
+- Carapicuíba
+- Osasco
+- Itapevi
+
+Informações do dataset:
+
+- 103 unidades de saúde
+- 4.766 avaliações
+- Comentários em português
+
+### Pré-processamento aplicado
+
+- Remoção de stopwords
+- Correção ortográfica
+- Normalização de texto
+- Limpeza de caracteres especiais
+
+---
+
+## 📊 Finalidade dos Dados
+
+Os datasets foram utilizados para:
+
+- Treinar o modelo LSTM
+- Treinar o modelo BERTimbau
+- Avaliar desempenho dos modelos
+- Realizar análise exploratória
+- Classificar sentimentos
+
+---
+
+## ⚠️ Observações
+
+- Os dados coletados são públicos
+- Nenhuma informação sensível foi utilizada
+- Os datasets foram tratados apenas para fins acadêmicos
+
+---
+
+## 👨‍💻 Autor
+
+Gustavo de Andrade Silva  
+Projeto de Ciência de Dados  
+Análise de Sentimentos com PLN
